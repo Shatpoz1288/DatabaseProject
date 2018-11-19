@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Student Curriculum</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -30,8 +30,16 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
-        <hr />
+        @RenderBody() @*Aqui es que se llama el resto de la pagina (Index, About , Contact)*@
+        <hr/>
+
+
+
+
+
+
+
+
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
@@ -42,3 +50,5 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+@*Este es el navbar, siempre esta presente, todo lo demas corre detras de esto*@
